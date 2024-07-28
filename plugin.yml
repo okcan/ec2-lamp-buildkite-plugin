@@ -2,3 +2,16 @@
 name: ec2-lamp-buildkite-plugin
 description: A plugin to install LAMP stack on an EC2 instance
 author: okcanyasins@gmail.com
+
+# Environment variables used by the plugin
+configuration:
+  ec2_instance_ip:
+    description: "IP address of the EC2 instance"
+    required: true
+  ssh_user:
+    description: "SSH user for the EC2 instance (default: ec2-user)"
+    required: true
+    default: "ec2-user"
+  ssh_key_path:
+    description: "path to the SSH private key file"
+    required: true
