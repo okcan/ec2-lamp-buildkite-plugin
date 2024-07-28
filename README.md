@@ -20,8 +20,8 @@ pipeline.yaml must be configured as you want such as IP and username and also pl
 
 To run the tests:
 
-1.Hook files should be worked on in the pipeline section
-2.Improvements can be made in the Hook folder
+1. Hook files should be worked on in the pipeline section
+2. Improvements can be made in the Hook folder
 
 ## Contributing
 
