@@ -1,6 +1,6 @@
 steps:
   - label: ":rocket: Launch EC2 Instance and Install LAMP"
-    command: "chmod +x .hooks/command"
+    command: "chmod +x hooks/command"
     command: "hooks/command"
     env:
       EC2_INSTANCE_IP: "54.173.180.58"
