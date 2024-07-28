@@ -1,0 +1,4 @@
+# plugin.yml
+name: buildkite-ec2-lamp-installer
+description: A plugin to install LAMP stack on an EC2 instance
+author: Your Name <your.email@example.com>
