@@ -1,7 +1,7 @@
 steps:
   - label: ":rocket: Launch EC2 Instance and Install LAMP"
     command: "hooks/permission.sh"
-    command: "hooks/command"
+    command: "hooks/install-lamp.sh"
     env:
       EC2_INSTANCE_IP: "54.173.180.58"
       SSH_PRIVATE_KEY: "ok"
