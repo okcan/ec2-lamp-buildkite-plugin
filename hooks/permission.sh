@@ -1,2 +1,2 @@
-chmod +x command
+chmod +x hooks/command
 
