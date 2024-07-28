@@ -1,6 +1,6 @@
 steps:
   - label: ":rocket: Launch EC2 Instance and Install LAMP"
-    command: ".buildkite/plugins/your-organization/buildkite-ec2-lamp-installer/hooks/command"
+    command: "hooks/command"
     env:
       EC2_INSTANCE_IP: "your-ec2-instance-ip"
       SSH_PRIVATE_KEY: |
