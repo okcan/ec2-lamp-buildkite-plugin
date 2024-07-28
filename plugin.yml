@@ -15,3 +15,7 @@ configuration:
   ssh_key_path:
     description: "path to the SSH private key file"
     required: true
+    
+# Identifying hook files
+hooks:
+  command: "hooks/command"
