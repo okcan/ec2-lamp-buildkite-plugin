@@ -2,25 +2,25 @@
 
 chmod 400 hooks/key.pem
 
-# SSH anahtarının yolunu belirleyin
+# Please specify your file path
 SSH_KEY_PATH="hooks/key.pem"
 
-# EC2 instance'ına SSH ile bağlanın ve LAMP stack'i kurun
+# Connect to EC2 instance via SSH and install LAMP stack
 ssh -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no "$SSH_USER@$EC2_INSTANCE_IP" << 'EOF'
-  # Apache kurulumu
+  # Apache installation
   sudo apt update
   sudo apt install -y apache2
 
-  # MySQL kurulumu
+  # MySQL installation
   sudo apt install -y mysql-server
   sudo mysql_secure_installation
 
-  # PHP kurulumu
+  # PHP installation
   sudo apt install -y php libapache2-mod-php php-mysql
 
-  # Apache yeniden başlatma
+  # Apache restart
   sudo systemctl restart apache2
 
-  # LAMP stack kurulumu tamamlandı
+  # LAMP stack installation completed
   echo "LAMP stack installation completed."
 EOF
