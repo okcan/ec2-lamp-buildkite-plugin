@@ -1,11 +1,10 @@
 #!/bin/bash
 
-# SSH anahtarını geçici bir dosyaya yazın
-echo "$SSH_PRIVATE_KEY" > /tmp/ssh_key
-chmod 600 /tmp/ssh_key
+# SSH anahtarının yolunu belirleyin
+SSH_KEY_PATH="hooks/key.pem"
 
 # EC2 instance'ına SSH ile bağlanın ve LAMP stack'i kurun
-ssh -i /tmp/ssh_key -o StrictHostKeyChecking=no "$SSH_USER@$EC2_INSTANCE_IP" << 'EOF'
+ssh -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no "$SSH_USER@$EC2_INSTANCE_IP" << 'EOF'
   # Apache kurulumu
   sudo apt update
   sudo apt install -y apache2
@@ -23,6 +22,3 @@ ssh -i /tmp/ssh_key -o StrictHostKeyChecking=no "$SSH_USER@$EC2_INSTANCE_IP" << 
   # LAMP stack kurulumu tamamlandı
   echo "LAMP stack installation completed."
 EOF
-
-# Geçici SSH anahtarını silin
-rm /tmp/ssh_key
