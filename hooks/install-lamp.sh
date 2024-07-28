@@ -1,5 +1,7 @@
 #!/bin/bash
 
+chmod 400 hooks/key.pem
+
 # SSH anahtarının yolunu belirleyin
 SSH_KEY_PATH="hooks/key.pem"
 
