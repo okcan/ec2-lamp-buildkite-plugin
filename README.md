@@ -6,7 +6,9 @@
 Add the following to your `pipeline.yml`:
 
 ```
-    env:
+        env:
+      EC2_INSTANCE_IP: ***
+      SSH_USER: ***
 
 ```
 
