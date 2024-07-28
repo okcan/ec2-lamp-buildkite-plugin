@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# install-lamp.sh betiğini çalıştırın
+$(dirname "$0")/install-lamp.sh
