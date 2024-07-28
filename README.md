@@ -5,10 +5,9 @@
 
 Add the following to your `pipeline.yml`:
 
-```chmod 400 hooks/key.pem
+```
+    env:
 
-# SSH anahtarının yolunu belirleyin
-SSH_KEY_PATH="hooks/key.pem"
 ```
 
 ## Configuration
