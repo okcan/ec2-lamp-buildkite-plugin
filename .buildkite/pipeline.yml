@@ -4,5 +4,5 @@ steps:
     command: "hooks/install-lamp.sh"
     env:
       EC2_INSTANCE_IP: "54.173.180.58"
-      SSH_PRIVATE_KEY: ${{secrets.AWS_PRIVATE_KEY}}
+      SSH_PRIVATE_KEY: ${{ secrets.AWS_PRIVATE_KEY }}
       SSH_USER: "ubuntu"
