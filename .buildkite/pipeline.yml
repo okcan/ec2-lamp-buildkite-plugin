@@ -1,7 +1,7 @@
 steps:
   - label: ":rocket: Launch EC2 Instance and Install LAMP"
+    mount-buildkite-agent: true
     command: "hooks/install-lamp.sh"
-    command: "echo thank you"
     env:
       EC2_INSTANCE_IP: "54.173.180.58"
       SSH_USER: "ubuntu"
