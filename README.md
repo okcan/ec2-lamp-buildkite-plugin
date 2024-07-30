@@ -32,6 +32,6 @@ To run the tests:
 5. Send a pull request
 
 ## Roadmap
-1. Lint in the pipeline will be added
+1. shellcheck, plugin-linter, plugin-tester in the pipeline will be added
 2. Docker (options) will be added 
 3. Tests will be added
