@@ -30,3 +30,8 @@ To run the tests:
 3. Run the tests
 4. Commit and push your changes
 5. Send a pull request
+
+## Roadmap
+1. Lint in the pipeline will be added
+2. Docker (options) will be added 
+3. Tests will be added
